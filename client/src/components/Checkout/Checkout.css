@@ -1,0 +1,35 @@
+.checkout {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.checkout__header {
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  color: #333;
+}
+
+.checkout__button {
+  padding: 12px 24px;
+  background-color: #3399cc;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout__button:hover {
+  background-color: #2d89b8;
+}
+
+.checkout__button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
