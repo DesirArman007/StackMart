@@ -21,7 +21,7 @@ import SearchView from '../routes/Search';
 import Checkout from '../components/Checkout/Checkout';
 import Wishlist from '../components/Wishlist';
 import Payment from "../components/payment/Payment"
-
+import Dashboard from '../components/Dashboard/Dashboard';
 // Account Pages
 import ManageAccount from '../components/Account/ManageAccount/ManageAccount';
 import MyAccount from '../components/Account/MyAccount/MyAccount';
@@ -48,6 +48,7 @@ function App() {
               <Route path="/checkout" element={<Checkout />} />
 <Route path="/payment/:orderId" element={<Payment />} />
               <Route path="/admin" element={<Wishlist />} />
+  <Route path="/dashboard" element={<Dashboard />} />
 
               {/* Account Routes */}
               <Route path="/account/me" element={<MyAccount />} />

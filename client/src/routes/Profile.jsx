@@ -1,21 +1,22 @@
-import MyAccount from "../../UI/Account/MyAccount/MyAccount";
-import ManageAccount from "../../UI/Account/ManageAccount/ManageAccount";
+import { Navigate } from "react-router-dom";
+import MyAccount from "../../components/Account/MyAccount/MyAccount";
+import ManageAccount from "../../components/Account/ManageAccount/ManageAccount";
 import { TabTitle } from "../../../utils/General";
 
 export const Profile = () => {
+  TabTitle("My Account - Stackmart");
 
-    TabTitle("My Account - Shema")
+  const token = localStorage.getItem("token");
+  if (!token) return <Navigate to="/account/login" replace />;
 
-    return ( 
-        <MyAccount />
-     );
-}
+  return <MyAccount />;
+};
 
 export const AccountManager = () => {
+  TabTitle("My Account - Stackmart");
 
-    TabTitle("My Account - Shema")
+  const token = localStorage.getItem("token");
+  if (!token) return <Navigate to="/account/login" replace />;
 
-    return (
-        <ManageAccount />
-    );
-}
+  return <ManageAccount />;
+};

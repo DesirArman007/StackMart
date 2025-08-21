@@ -18,6 +18,11 @@ app.use(express.static("public"));
 // Routes
 app.use('/api/items', require("./routes/items"));
 app.use('/api/payment', require("./routes/payment"));
+// Routes
+app.use('/api/items', require("./routes/items"));
+app.use('/api/payment', require("./routes/payment"));
+app.use('/api/auth', require("./routes/auth"));   // 👈 add this line
+
 
 // Root test route
 app.get("/", (req, res) => {
